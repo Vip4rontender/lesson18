@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 18</title>
+  </head>
+  <body></body>
+  <script>
+    let firstMonth = +prompt("Enter first month salary", "1");
+    let secondMonth = +prompt("Enter second month salary", "2");
+
+    let sum = firstMonth + secondMonth;
+    alert(`Your salary for 2 month is: ${sum}$`);
+
+    let bonus = firstMonth + secondMonth + 1;
+    alert(
+      `You have extra bonus! Your total salary was: ${sum}$ it\`s increase for 1$ and now it is: ${bonus}$`
+    );
+
+    if (bonus >= 2000) {
+      alert(`I\`m ready to work`);
+    } else {
+      alert(`I\`m out`);
+    }
+
+    let yes = bonus >= 2000;
+    let no = bonus < 2000;
+    // alert(`Will you work next? ${yes}` || `Will you work next? ${no}`);
+  </script>
+</html>
